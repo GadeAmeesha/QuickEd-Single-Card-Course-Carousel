@@ -1,0 +1,54 @@
+
+.concept-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px 5%;
+  background: #071b16;
+  border-bottom: 1px solid #ffffff20;
+}
+
+.concept-navigation h2 {
+  color: white;
+  margin: 0;
+}
+
+.concept-navigation h2 span {
+  color: #c62828;
+}
+
+.concept-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.concept-buttons button {
+  padding: 10px 16px;
+  background: transparent;
+  color: white;
+  border: 1px solid #ffffff40;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.concept-buttons button:hover,
+.concept-buttons button.active {
+  background: #a31c1b;
+  border-color: #a31c1b;
+}
+
+@media (max-width: 600px) {
+  .concept-navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .concept-buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
